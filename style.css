@@ -28,7 +28,7 @@ nav a {
 }
 
 .hero {
-    background-image: url ('https://github.com/winsxtor/winsxtor.github.io/blob/6b255ab01ae01d1243ba2d6e0c46de99470ec3b4/winselectah.jpg');
+    background-image: url (https://github.com/winsxtor/winsxtor.github.io/blob/6b255ab01ae01d1243ba2d6e0c46de99470ec3b4/winselectah.jpg);
     background-size: cover;
     padding: 60px 20px;
     text-align: center;
