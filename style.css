@@ -67,3 +67,16 @@ footer {
     padding: 10px;
     background-color: #1a1a1a;
 }
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Acomoda las fotos en columnas responsivas */
+    gap: 15px; /* Espacio entre las imágenes */
+    padding: 20px;
+}
+
+.galeria-grid .foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
