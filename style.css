@@ -4,6 +4,10 @@ body {
     padding: 0;
     background-color: #121212;
     color: #ffffff;
+    background-image: url("winselectah.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
 }
 
 header {
@@ -28,26 +32,17 @@ nav a {
 }
 
 .hero {
-  background-image: url("winselectah.jpg");
-  background-size: cover;
-  padding: 60px 60px;
-  text-align: center;
+    padding: 60px 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Opcional: para que el texto se vea mejor sobre la imagen */
 }
 
 events {
-
     padding: 20px;
-
 }
-
 
 footer {
-
     text-align: center;
-
     padding: 10px;
-
     background-color: #1a1a1a;
-
 }
-
