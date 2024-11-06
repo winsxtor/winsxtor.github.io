@@ -43,7 +43,7 @@ nav a {
     font-family: 'Lora', serif; /* Fuente Lora aplicada solo en la sección events */
     font-size: 18px; /* Tamaño de fuente adecuado */
     line-height: 1.8; /* Mejora la legibilidad */
-    background-color: #1a1a1a; /* Fondo oscuro */
+    background-color: linear-gradient(45deg, #FF8C00, #F4B8D7); /* Fondo oscuro */
     color: #ffffff; /* Texto blanco */
 }
 
