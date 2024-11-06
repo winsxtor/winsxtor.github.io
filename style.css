@@ -35,7 +35,7 @@ nav a {
 }
 
 .events {.events {
-  background-image: url("winselectah.jpg"); /* Asegúrate de que la ruta sea correcta */
+  background-image: url("winselectah.jpg");
   background-size: cover;
   background-position: center center;
   padding: 20px;
