@@ -6,7 +6,6 @@
     <title>Contacto - WINS THE DEEJAAY</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Header with navigation -->
@@ -31,7 +30,8 @@
                 <h2>Contacto</h2>
                 <p>Si tienes alguna consulta, no dudes en enviarnos un mensaje. ¡Nos encantaría saber de ti!</p>
                 <!-- Contact Form -->
-                <form id="contact-form">
+                <form action="https://formsubmit.co/contacto@winsdj.com" method="POST">
+                    <!-- Form Fields -->
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
 
@@ -40,6 +40,10 @@
 
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí"></textarea>
+
+                    <!-- Hidden input to redirect after form submission -->
+                    <input type="hidden" name="_next" value="https://tu-sitio-web.com/gracias.html">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario de contacto">
 
                     <button type="submit">Enviar</button>
                 </form>
@@ -53,32 +57,5 @@
             <p>&copy; 2024 WINS THE DEEJAAY. Todos los derechos reservados.</p>
         </div>
     </footer>
-    
-    <script type="text/javascript">
-        // Initialize EmailJS with your User ID
-        (function() {
-            emailjs.init("service_kuquw6k");  // Replace with your User ID from EmailJS
-        })();
-
-        // Handle form submission
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-
-            var formData = {
-                from_name: document.getElementById("nombre").value,
-                from_email: document.getElementById("email").value,
-                message: document.getElementById("mensaje").value,
-            };
-
-            // Send email using EmailJS
-            emailjs.send("service_kuquw6k", "template_m06vr7r", formData)
-                .then(function(response) {
-                    alert("¡Mensaje enviado exitosamente!");
-                }, function(error) {
-                    alert("Hubo un error al enviar el mensaje: " + error.text);
-                });
-        });
-    </script>
 </body>
 </html>
-
