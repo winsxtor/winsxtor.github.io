@@ -34,15 +34,20 @@ nav a {
   text-align: center;
 }
 
-.events {.events {
-  background-image: url("winselectah.jpg");
-  background-size: cover;
-  background-position: center center;
-  padding: 20px;
+events {
+
+    padding: 20px;
+
 }
 
+
 footer {
+
     text-align: center;
+
     padding: 10px;
+
     background-color: #1a1a1a;
+
 }
+
