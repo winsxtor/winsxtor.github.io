@@ -45,24 +45,24 @@
     
     <script type="text/javascript">
         (function() {
-            emailjs.init("service_kuquw6k");  // Reemplaza con tu User ID de EmailJS
-        })();
+           emailjs.init("service_kuquw6k");  // Reemplaza con tu User ID de EmailJS
 
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-            var formData = {
-                from_name: document.getElementById("nombre").value,
-                from_email: document.getElementById("email").value,
-                message: document.getElementById("mensaje").value,
-            };
+    var formData = {
+        from_name: document.getElementById("nombre").value,
+        from_email: document.getElementById("email").value,
+        message: document.getElementById("mensaje").value,
+    };
 
-            emailjs.send("smtp2go_service", "template_m06vr7r", formData)
-                .then(function(response) {
-                    alert("¡Mensaje enviado exitosamente!");
-                }, function(error) {
-                    alert("Hubo un error, por favor intenta nuevamente.");
-                });
+    emailjs.send("service_kuquw6k", "template_m06vr7r", formData)  // Asegúrate de que los IDs del servicio y template sean correctos
+        .then(function(response) {
+            alert("¡Mensaje enviado exitosamente!");
+        }, function(error) {
+            alert("Hubo un error al enviar el mensaje: " + error.text);  // Muestra un mensaje más detallado con el error
+        });
+});
         });
     </script>
 </body>
