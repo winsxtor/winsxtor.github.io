@@ -13,7 +13,7 @@ body {
 header {
     background-color: linear-gradient(45deg, #FF8C00, #F4B8D7);
     padding: 20px;
-    color: Black;
+    color: white;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ events {
 .soundcloud-player {
     padding: 20px;
     text-align: center;
-    background-color: #ff5c00;
+    background-color:linear-gradient(45deg, #FF8C00, #F4B8D7);
     margin: 20px 0;
     border-radius: 8px;
 }
