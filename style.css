@@ -11,9 +11,9 @@ body {
 }
 
 header {
-    background-color: #FFB84D;
+    background-color: #ff5c00;
     padding: 20px;
-    color: white;
+    color: Black;
     text-align: center;
 }
 
@@ -50,7 +50,7 @@ events {
 .soundcloud-player {
     padding: 20px;
     text-align: center;
-    background-color: #FFB84D;
+    background-color: #ff5c00;
     margin: 20px 0;
     border-radius: 8px;
 }
