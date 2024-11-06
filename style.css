@@ -34,11 +34,26 @@ nav a {
 .hero {
     padding: 60px 60px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5); /* Opcional: para que el texto se vea mejor sobre la imagen */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 events {
     padding: 20px;
+}
+
+.soundcloud-player {
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.soundcloud-player iframe {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px; /* Máximo ancho del reproductor */
+    height: 166px;
 }
 
 footer {
