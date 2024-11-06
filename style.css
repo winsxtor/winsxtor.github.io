@@ -34,8 +34,11 @@ nav a {
   text-align: center;
 }
 
-.events {
-    padding: 20px;
+.events {.events {
+  background-image: url("winselectah.jpg"); /* Asegúrate de que la ruta sea correcta */
+  background-size: cover;
+  background-position: center center;
+  padding: 20px;
 }
 
 footer {
