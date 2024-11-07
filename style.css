@@ -18,7 +18,7 @@ header {
     padding: 20px;
     color: white;
     text-align: center;
-    position: relative; /* Necesario para colocar los botones en la parte superior derecha */
+    position: relative; /* Necesario para colocar los botones en la parte superior */
 }
 
 header h1 {
@@ -44,11 +44,11 @@ nav a {
     font-weight: bold;
 }
 
-/* Redes sociales: Botones en la parte superior derecha */
+/* Redes sociales: Botones en la parte superior izquierda */
 .social-buttons {
     position: absolute;
     top: 20px; /* Ajusta la distancia desde la parte superior */
-    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo */
     display: flex;
     gap: 10px; /* Espacio entre los botones */
 }
@@ -83,7 +83,7 @@ nav a {
 }
 
 .tiktok {
-    color: #000000;
+    color: #000000; /* Asegúrate de que el color de TikTok sea visible */
 }
 
 .soundcloud {
@@ -105,7 +105,7 @@ nav a {
 }
 
 .social-btn:hover.tiktok {
-    border-color: #39b54a;
+    border-color: #39b54a; /* Aseguramos que el borde de TikTok sea visible al hacer hover */
 }
 
 .social-btn:hover.soundcloud {
@@ -186,7 +186,7 @@ form {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    width: 80%; /* Reducimos el ancho del formulario un 20% */
+    width: 60%; /* Reducimos el ancho del formulario un 20% */
     margin: 0 auto;
     border: 1.7px solid #FFDD00; /* Reborde amarillo más delgado (15% más fino que 2px) */
 }
