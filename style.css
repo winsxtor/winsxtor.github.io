@@ -1,6 +1,6 @@
 /* General body styles */
 body {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Public Sans', sans-serif; /* Usamos Public Sans como fuente sans-serif */
     margin: 0;
     padding: 0;
     background-color: #121212;
@@ -18,6 +18,7 @@ header {
     padding: 20px;
     color: white;
     text-align: center;
+    position: relative; /* Necesario para colocar los botones en la parte superior derecha */
 }
 
 header h1 {
@@ -43,6 +44,49 @@ nav a {
     font-weight: bold;
 }
 
+/* Redes sociales: Botones en la parte superior derecha */
+.social-buttons {
+    position: absolute;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilo básico para los botones de redes sociales */
+.social-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos específicos para cada red social */
+.instagram {
+    background-color: #E4405F;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.tiktok {
+    background-color: #000000;
+}
+
+.soundcloud {
+    background-color: #FF5500;
+}
+
+/* Efecto hover para los botones */
+.social-btn:hover {
+    opacity: 0.8;
+}
+
 /* Hero section styling */
 .hero {
     padding: 60px 60px;
@@ -53,7 +97,7 @@ nav a {
 /* Events section styling */
 .events {
     padding: 40px 20px;
-    font-family: 'Lora', serif;
+    font-family: 'Public Sans', sans-serif; /* Aplicamos la fuente aquí también */
     font-size: 18px;
     line-height: 1.8;
     background-color: linear-gradient(45deg, #FF8C00, #F4B8D7);
@@ -92,28 +136,6 @@ nav a {
     height: 166px;
 }
 
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #1a1a1a;
-}
-
-/* Gallery section */
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 15px; /* Space between images */
-    padding: 20px;
-}
-
-.galeria-grid .foto img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 /* Contact form styles */
 #contacto {
     padding: 40px 20px;
@@ -133,14 +155,16 @@ footer {
     color: #ccc;
 }
 
+/* Modificación del formulario de contacto */
 form {
-    background-color: #333;
+    background-color: #000000; /* Fondo negro */
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
+    border: 2px solid #FFDD00; /* Reborde amarillo (color Lakers) */
 }
 
 form label {
@@ -157,19 +181,20 @@ form textarea {
     margin: 10px 0 20px 0;
     border: 1px solid #444;
     border-radius: 6px;
-    background-color: #222;
-    color: #fff;
+    background-color: #ffffff; /* Fondo blanco para el área de texto */
+    color: #222; /* Color del texto en los campos de entrada */
     font-size: 1em;
 }
 
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    background-color: #333;
+    background-color: #ffffff;
 }
 
+/* Botón de enviar púrpura con efecto hover */
 form button {
-    background-color: #FF8C00;
+    background-color: #552582; /* Púrpura como los Lakers */
     color: white;
     padding: 12px 25px;
     font-size: 1.2em;
@@ -178,10 +203,12 @@ form button {
     cursor: pointer;
     width: 100%;
     margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
+/* Efecto hover para el botón de enviar */
 form button:hover {
-    background-color: #F4B8D7;
+    background-color: #3e1e6a; /* Púrpura más oscuro */
 }
 
 /* Footer styles */
