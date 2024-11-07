@@ -41,8 +41,11 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí"></textarea>
 
+                    <!-- Hidden input to disable CAPTCHA -->
+                    <input type="hidden" name="_captcha" value="false">
+
                     <!-- Hidden input to redirect after form submission -->
-                    <input type="hidden" name="_next" value="https://tu-sitio-web.com/gracias.html">
+                    <input type="hidden" name="_next" value="https://winsxtor.github.io/gracias.html"> <!-- Cambia esto por la URL correcta -->
                     <input type="hidden" name="_subject" value="Nuevo mensaje desde el formulario de contacto">
 
                     <button type="submit">Enviar</button>
