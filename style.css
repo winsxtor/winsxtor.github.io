@@ -98,7 +98,7 @@ nav a {
 .events {
     padding: 40px 20px;
     font-family: 'Public Sans', sans-serif; /* Aplicamos la fuente aquí también */
-    font-size: 18px;
+    font-size: 13.5px; /* Reducimos el tamaño un 25% (de 18px a 13.5px) */
     line-height: 1.8;
     background-color: linear-gradient(45deg, #FF8C00, #F4B8D7);
     color: #ffffff;
@@ -116,7 +116,7 @@ nav a {
 }
 
 .events ul li {
-    font-size: 1.2em;
+    font-size: 0.9em; /* Reducimos el tamaño un 25% (de 1.2em a 0.9em) */
     margin: 10px 0;
 }
 
@@ -161,10 +161,9 @@ form {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    max-width: 600px;
+    width: 80%; /* Reducimos el ancho del formulario un 20% */
     margin: 0 auto;
-    border: 2px solid #FFDD00; /* Reborde amarillo (color Lakers) */
+    border: 1.7px solid #FFDD00; /* Reborde amarillo más delgado (15% más fino que 2px) */
 }
 
 form label {
@@ -224,6 +223,22 @@ footer p {
     margin: 0;
 }
 
+/* Gallery section */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Espacio entre imágenes */
+    padding: 20px;
+}
+
+.galeria-grid .foto img {
+    width: auto; /* Deja que las imágenes se muestren en su tamaño original */
+    height: auto;
+    max-width: 100%; /* Limita el ancho al 100% del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Mobile responsiveness */
 @media (max-width: 768px) {
     header h1 {
@@ -249,7 +264,7 @@ footer p {
     }
 
     form {
-        width: 90%;
+        width: 80%; /* Ajustamos para que el formulario sea más pequeño en dispositivos móviles */
     }
 
     form button {
