@@ -46,12 +46,12 @@ nav a {
 
 /* Redes sociales: Botones en la parte superior izquierda */
 .social-buttons {
-    position: fixed; /* Para que se fijen en la pantalla incluso al hacer scroll */
+    position: fixed; /* Fija los botones en la pantalla incluso al hacer scroll */
     top: 20px;
     left: 20px;
     display: flex;
     gap: 10px;
-    z-index: 10; /* Para asegurar que se muestren encima de otros elementos */
+    z-index: 10; /* Asegura que se muestren por encima de otros elementos */
 }
 
 .social-btn {
@@ -60,7 +60,7 @@ nav a {
     align-items: center;
     width: 30px;  /* Ajusta el tamaño de los iconos */
     height: 30px;
-    border-radius: 50%; /* Hacemos los iconos circulares */
+    border-radius: 50%; /* Hace los iconos circulares */
     background-color: #ffffff;
     border: 2px solid transparent;
     transition: background-color 0.3s ease, border 0.3s ease;
@@ -267,9 +267,5 @@ footer p {
 
     form button {
         width: 100%;
-    }
-
-    .galeria-grid {
-        grid-template-columns: 1fr 1fr;
     }
 }
