@@ -46,7 +46,7 @@ nav a {
 
 /* Redes sociales: Botones en la parte superior izquierda */
 .social-buttons {
-    position: absolute;
+    position: relative;
     top: 40px; /* Ajusta la distancia desde la parte superior */
     left: 20px; /* Ajusta la distancia desde el borde izquierdo */
     display: flex;
