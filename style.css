@@ -43,6 +43,7 @@ nav a {
     font-size: 1.1em;
     font-weight: bold;
 }
+
 /* Redes sociales: Botones en la parte superior izquierda */
 .social-buttons {
     position: absolute; /* Hace que los botones estén sobre el header */
@@ -51,77 +52,6 @@ nav a {
     display: flex;
     gap: 10px; /* Espacio entre los botones */
     z-index: 10; /* Asegura que los botones queden por encima de otros elementos */
-}
-
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-    /* Estilo para los botones de redes sociales solo en móviles */
-    .social-buttons {
-        position: fixed; /* Posición fija para que estén en la parte superior */
-        top: 10px; /* Distancia desde la parte superior */
-        left: 50%; /* Centrar horizontalmente */
-        transform: translateX(-50%); /* Asegura que esté perfectamente centrado */
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-        z-index: 10;
-    }
-
-    /* Ajustar tamaño de los botones en móviles */
-    .social-btn {
-        width: 40px; /* Ajuste de tamaño */
-        height: 40px;
-    }
-
-    /* Colores de los botones de redes sociales */
-    .social-btn.instagram {
-        background-color: #E4405F;
-    }
-
-    .social-btn.facebook {
-        background-color: #3b5998;
-    }
-
-    .social-btn.tiktok {
-        background-color: #000000;
-    }
-
-    .social-btn.soundcloud {
-        background-color: #FF5500;
-    }
-}
-
-/* Estilos generales para escritorio */
-.social-buttons {
-    position: absolute; /* Posición normal para escritorio */
-    top: 30px;
-    left: 20px;
-    display: flex;
-    gap: 10px;
-    z-index: 10;
-}
-
-/* Estilo para los botones de redes sociales */
-.social-btn {
-    width: 30px; /* Tamaño original en escritorio */
-    height: 30px;
-}
-
-/* Colores de los botones de redes sociales */
-.social-btn.instagram {
-    background-color: #E4405F;
-}
-
-.social-btn.facebook {
-    background-color: #3b5998;
-}
-
-.social-btn.tiktok {
-    background-color: #000000;
-}
-
-.social-btn.soundcloud {
-    background-color: #FF5500;
 }
 
 /* Estilo básico para los botones de redes sociales */
@@ -137,9 +67,7 @@ nav a {
     transition: background-color 0.3s ease, border 0.3s ease;
 }
 .social-btn a {
-  /* Existing styles */
-  ...
-  target: _blank; /* Open links in new tabs */
+    target: _blank; /* Abrir enlaces en nuevas pestañas */
 }
 
 /* Iconos dentro de los botones */
@@ -374,6 +302,21 @@ footer p {
 
     .galeria-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Ajuste de los botones de redes sociales para dispositivos móviles */
+    .social-buttons {
+        position: fixed; /* Los fija en la pantalla */
+        bottom: 20px; /* Distancia desde la parte inferior */
+        left: 50%; /* Centra los botones */
+        transform: translateX(-50%); /* Centra los botones horizontalmente */
+        z-index: 100; /* Los coloca por encima de otros elementos */
+    }
+
+    .social-btn {
+        width: 40px; /* Tamaño de los botones en móviles */
+        height: 40px;
+        font-size: 20px; /* Tamaño de los iconos */
     }
 }
 
