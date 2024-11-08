@@ -58,10 +58,10 @@ nav a {
     display: inline-flex; /* Usamos inline-flex para asegurarnos de que los botones se alineen */
     justify-content: center;
     align-items: center;
-    width: 40px;  /* Ajusta el tamaño de los iconos */
-    height: 40px;
+    width: 20px;  /* Ajusta el tamaño de los iconos */
+    height: 20px;
     overflow: hidden;
-    border-radius: 50%; /* Hace que los iconos sean circulares */
+    border-radius: 30%; /* Hace que los iconos sean circulares */
     background-color: #ffffff; /* Fondo blanco para los botones */
     border: 2px solid transparent; /* Borde transparente por defecto */
     transition: background-color 0.3s ease, border 0.3s ease; /* Agregado borde en el hover */
