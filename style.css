@@ -53,22 +53,76 @@ nav a {
     z-index: 10; /* Asegura que los botones queden por encima de otros elementos */
 }
 
-/* Para pantallas móviles */
+/* Mobile responsiveness */
 @media (max-width: 768px) {
+    /* Estilo para los botones de redes sociales solo en móviles */
     .social-buttons {
-        position: relative; /* Cambia la posición a relativa en lugar de absolute */
-        top: 0; /* Elimina la distancia desde el top */
-        left: 0; /* Elimina la distancia desde el left */
-        margin-top: 10px; /* Agrega un margen superior para separar los botones del header */
-        justify-content: center; /* Centra los botones en la pantalla */
-        width: 100%; /* Hace que los botones se distribuyan en toda la pantalla */
+        position: fixed; /* Posición fija para que estén en la parte superior */
+        top: 10px; /* Distancia desde la parte superior */
+        left: 50%; /* Centrar horizontalmente */
+        transform: translateX(-50%); /* Asegura que esté perfectamente centrado */
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        z-index: 10;
     }
 
-    /* Redimensionar los botones en pantallas más pequeñas */
+    /* Ajustar tamaño de los botones en móviles */
     .social-btn {
-        width: 35px; /* Ajusta el tamaño de los botones */
-        height: 35px;
+        width: 40px; /* Ajuste de tamaño */
+        height: 40px;
     }
+
+    /* Colores de los botones de redes sociales */
+    .social-btn.instagram {
+        background-color: #E4405F;
+    }
+
+    .social-btn.facebook {
+        background-color: #3b5998;
+    }
+
+    .social-btn.tiktok {
+        background-color: #000000;
+    }
+
+    .social-btn.soundcloud {
+        background-color: #FF5500;
+    }
+}
+
+/* Estilos generales para escritorio */
+.social-buttons {
+    position: absolute; /* Posición normal para escritorio */
+    top: 30px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+/* Estilo para los botones de redes sociales */
+.social-btn {
+    width: 30px; /* Tamaño original en escritorio */
+    height: 30px;
+}
+
+/* Colores de los botones de redes sociales */
+.social-btn.instagram {
+    background-color: #E4405F;
+}
+
+.social-btn.facebook {
+    background-color: #3b5998;
+}
+
+.social-btn.tiktok {
+    background-color: #000000;
+}
+
+.social-btn.soundcloud {
+    background-color: #FF5500;
+}
 
 /* Estilo básico para los botones de redes sociales */
 .social-btn {
