@@ -43,7 +43,6 @@ nav a {
     font-size: 1.1em;
     font-weight: bold;
 }
-
 /* Redes sociales: Botones en la parte superior izquierda */
 .social-buttons {
     position: absolute; /* Hace que los botones estén sobre el header */
@@ -53,6 +52,23 @@ nav a {
     gap: 10px; /* Espacio entre los botones */
     z-index: 10; /* Asegura que los botones queden por encima de otros elementos */
 }
+
+/* Para pantallas móviles */
+@media (max-width: 768px) {
+    .social-buttons {
+        position: relative; /* Cambia la posición a relativa en lugar de absolute */
+        top: 0; /* Elimina la distancia desde el top */
+        left: 0; /* Elimina la distancia desde el left */
+        margin-top: 10px; /* Agrega un margen superior para separar los botones del header */
+        justify-content: center; /* Centra los botones en la pantalla */
+        width: 100%; /* Hace que los botones se distribuyan en toda la pantalla */
+    }
+
+    /* Redimensionar los botones en pantallas más pequeñas */
+    .social-btn {
+        width: 35px; /* Ajusta el tamaño de los botones */
+        height: 35px;
+    }
 
 /* Estilo básico para los botones de redes sociales */
 .social-btn {
