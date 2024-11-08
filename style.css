@@ -53,21 +53,7 @@ nav a {
     gap: 10px; /* Espacio entre los botones */
     z-index: 10; /* Asegura que los botones queden por encima de otros elementos */
 }
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .social-buttons {
-    /* Display buttons horizontally on mobile */
-    display: flex;
-    justify-content: space-between; /* Space buttons evenly */
-    width: 100%; /* Take full width on mobile */
-    top: auto; /* Remove top positioning */
-    left: auto; /* Remove left positioning */
-  }
-.social-btn a {
-  /* Existing styles */
-  ...
-  target: _blank; /* Open links in new tabs */
-}
+
 /* Estilo básico para los botones de redes sociales */
 .social-btn {
     display: inline-flex; /* Alinea los iconos de las redes sociales */
