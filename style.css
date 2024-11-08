@@ -306,3 +306,31 @@ footer p {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+/* Estilos para la sección de biografía */
+.biografia {
+    max-width: 800px; /* Limita el ancho de la biografía */
+    margin: 0 auto; /* Centra la sección */
+    padding: 30px; /* Espacio dentro de la sección */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    color: #f4f4f4; /* Color de texto claro */
+    text-align: center; /* Centra el texto */
+    line-height: 1.8; /* Mejor espaciado entre líneas */
+    font-size: 1.1em; /* Un poco más grande para mejor lectura */
+}
+
+.biografia h2 {
+    font-size: 2em; /* Título más grande */
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #FF8C00; /* Color destacado para el título */
+}
+
+.biografia p {
+    font-size: 1.2em; /* Tamaño de fuente más grande para mayor legibilidad */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    text-align: justify; /* Justifica el texto para mayor coherencia visual */
+    color: #cccccc; /* Color de texto más suave */
+}
