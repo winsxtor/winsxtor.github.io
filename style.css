@@ -66,6 +66,11 @@ nav a {
     border: 2px solid transparent;
     transition: background-color 0.3s ease, border 0.3s ease;
 }
+.social-btn a {
+  /* Existing styles */
+  ...
+  target: _blank; /* Open links in new tabs */
+}
 
 /* Iconos dentro de los botones */
 .social-btn i {
