@@ -308,13 +308,13 @@ footer p {
     .social-buttons {
         position: relative;
         top: 0px; /* Distancia desde la parte superior */
-        left: 100%; /* Centra los botones */
+        left: 80%; /* Centra los botones */
         transform: translateX(-50%); /* Centra los botones horizontalmente */
         z-index: 100; /* Los coloca por encima de otros elementos */
     }
 
     .social-btn {
-        width: 25px; /* Tamaño de los botones en móviles */
+        width: 30px; /* Tamaño de los botones en móviles */
         height: 40px;
         font-size: 20px; /* Tamaño de los iconos */
     }
