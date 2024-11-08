@@ -306,7 +306,7 @@ footer p {
 
     /* Ajuste de los botones de redes sociales para dispositivos móviles */
     .social-buttons {
-        position: fixed; /* Los fija en la pantalla */
+        position: absolute;
         bottom: 20px; /* Distancia desde la parte inferior */
         left: 50%; /* Centra los botones */
         transform: translateX(-50%); /* Centra los botones horizontalmente */
