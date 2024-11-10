@@ -303,7 +303,6 @@ main {
 .foto img:hover {
     transform: scale(1.05);
 }
-
 /* Estilo del popup */
 .popup {
     display: none;
@@ -326,7 +325,6 @@ main {
 .popup:target {
     display: flex;
 }
-
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
@@ -379,7 +377,6 @@ main {
         font-size: 20px; /* Tamaño de los iconos */
     }
 }
-
 /* Estilos para la sección de biografía */
 .biografia {
     max-width: 800px; /* Limita el ancho de la biografía */
